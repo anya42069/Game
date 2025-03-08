@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.claw-machine {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #ccc;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.claw {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: top 0.5s ease;
+}
+
+.prizes {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prize {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 24px;
+  color: green;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
